@@ -1,0 +1,70 @@
+section.contact-us h1.title {
+    color: var(--title);
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+}
+section.contact-us .contact-icon {
+    margin-right: 8px;
+    color: var(--subtitle);
+    font-size: 1.8rem;
+}
+section.contact-us .sub-title {
+    color: var(--subtitle);
+    margin-bottom: 2rem;
+    line-height: 1.6rem;
+}
+section.contact-us form label {
+    color: var(--subtitle);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+section.contact-us form input,
+section.contact-us form textarea {
+    all: unset;
+    background-color: rgba(63, 63, 70, 0.15);
+    border: 1px solid rgb(63, 63, 70);
+    width: 16rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: 0.2s;
+}
+/* in light mode */
+.light section.contact-us form input,
+.light section.contact-us form textarea {
+    background-color: rgba(255, 255, 255, 0.162);
+    color: #232324;
+}
+/* ================= in light mode ======================*/
+
+section.contact-us form input:hover,
+section.contact-us form textarea:hover {
+    border: 1px solid var(--blue);
+}
+section.contact-us form input:focus,
+section.contact-us form textarea:focus {
+    border: 1px solid var(--blue);
+}
+section.contact-us form textarea {
+    min-height: 9rem;
+    resize: none;
+}
+
+section.contact-us form .main-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 765px) {
+    section.contact-us form {
+        width: 100%;
+    }
+    section.contact-us form input,
+    section.contact-us form textarea {
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+    section.contact-us .animation {
+        display: none;
+    }
+}

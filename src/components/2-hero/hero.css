@@ -1,0 +1,51 @@
+section.hero {
+    margin-top: 3rem;
+}
+section.hero .left-section {
+    flex-grow: 1;
+}
+/* start avatar section */
+section.hero .avatar {
+    width: 88px;
+    border-radius: 50%;
+    border: 1px solid var(--orange);
+    padding: 2px;
+    margin-right: 0.6rem;
+}
+section.hero .verified-icon {
+    color: var(--blue);
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+section.hero h1.title {
+    color: var(--title);
+    font-size: 2.8rem;
+    line-height: 3.3rem;
+    margin-top: 20px;
+}
+
+section.hero .sub-title {
+    color: var(--subtitle);
+    font-size: 1rem;
+    line-height: 1.65rem;
+    margin-bottom: 2rem;
+}
+
+.social-media {
+    gap: 1.5rem;
+}
+.social-media div a {
+    color: var(--subtitle);
+    transition: 0.2s;
+}
+.social-media div a:hover {
+    color: var(--icon-hover);
+    cursor: pointer;
+}
+
+@media (max-width: 765px) {
+    .hero .animation {
+        display: none;
+    }
+}

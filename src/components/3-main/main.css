@@ -1,0 +1,107 @@
+main {
+    display: flex;
+    align-items: start;
+    gap: 3rem;
+}
+
+main .left-section {
+    gap: 10px;
+    justify-content: center;
+    width: fit-content;
+}
+main .left-section button {
+    background-color: rgb(36, 37, 46);
+    width: 11rem;
+    padding: 0.75rem 0;
+    text-align: center;
+    font-size: 1.05rem;
+    opacity: 0.5;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+main .left-section button.active {
+    border: 1px solid var(--blue);
+    font-weight: bold;
+    opacity: 1;
+}
+main .left-section button:hover {
+    opacity: 1;
+}
+
+main .right-section {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 2rem 16px;
+    justify-content: start;
+}
+main .right-section .card {
+    border: 1px solid rgba(93, 188, 252, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.2s;
+    height: 293px;
+}
+main .right-section .card:hover {
+    border: 1px solid var(--blue);
+}
+main .right-section .card img {
+    width: 266px;
+}
+main .right-section .card .box {
+    width: 266px;
+    padding: 1rem 0.4rem;
+    background-image: linear-gradient(
+        rgba(255, 255255, 252, 0.05),
+        rgba(255, 255255, 252, 0.05)
+    );
+    height: 100%;
+}
+main .right-section .card .box .title {
+    color: var(--title);
+    text-transform: capitalize;
+}
+main .right-section .card .box .sub-title {
+    color: var(--subtitle);
+    font-size: 0.9rem;
+    margin: 0.7rem 0 1.1rem;
+}
+main .right-section .card .box .details {
+    justify-content: space-between;
+}
+main .right-section .card .box .details .links a,
+main .right-section .card .box .details .more a {
+    color: var(--subtitle);
+}
+main .right-section .card .box .details .links a:hover,
+main .right-section .card .box .details .more a:hover {
+    color: var(--icon-hover);
+}
+/* main .right-section .card .box .details .more a {
+    color: var(--blue);
+}
+main .right-section .card:hover .arrow {
+    animation: moveArrow 1s infinite alternate ease-in-out;
+}
+@keyframes moveArrow {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(5px);
+    }
+} */
+
+/* media query */
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+    main .right-section {
+        justify-content: center;
+    }
+}
+@media (max-width: 400px) {
+    main .left-section button {
+        width: 8rem;
+    }
+}

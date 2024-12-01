@@ -1,0 +1,45 @@
+import Header from "./components/1-header/Header";
+import Hero from "./components/2-hero/Hero";
+import Main from "./components/3-main/Main";
+import Contact from "./components/4-contact/Contact";
+import Footer from "./components/5-footer/Footer";
+import Container from "@mui/material/Container";
+import Divider from "@mui/material/Divider";
+import ScrollToTop from "./components/6-scroll/ScrollToTopButton";
+function App() {
+    return (
+        <>
+            <Container maxWidth="lg" className="container">
+                <Header />
+                <Hero />
+                <Divider
+                    sx={{
+                        borderBottom: "1px solid rgba(63, 63, 70, 0.4)",
+                        py: "1.4rem",
+                        mb: "1rem",
+                    }}
+                />
+                <Main />
+                <Divider
+                    sx={{
+                        borderBottom: "1px solid rgba(63, 63, 70, 0.4)",
+                        py: "3rem",
+                        mb: "1rem",
+                    }}
+                />
+                <Contact />
+                <Divider
+                    sx={{
+                        borderBottom: "1px solid rgba(63, 63, 70, 0.4)",
+                        py: "3rem",
+                        mb: "1rem",
+                    }}
+                />
+                <Footer />
+            </Container>
+            <ScrollToTop />
+        </>
+    );
+}
+
+export default App;
