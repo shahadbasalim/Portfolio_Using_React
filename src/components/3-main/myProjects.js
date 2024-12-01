@@ -156,4 +156,13 @@ export const myProjects = [
             "https://github.com/shahadbasalim/prayers_timings_using_React",
         liveDemoLink: "https://prayers-timings-byshahadbasalim.netlify.app/",
     },
+    {
+        projectTitle: "Dev Shahad",
+        projectDescription: "A personal website that reflects my skills as a Frontend Developer, where I showcase my tech projects and provide ways to get in touch with me.",
+        category: "react",
+        imgPath: "/public/projects/react5.png",
+        githubLink:
+            "https://github.com/shahadbasalim/Portfolio_Using_React",
+        liveDemoLink: "https://dev-shahad.netlify.app ",
+    },
 ];
