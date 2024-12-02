@@ -41,6 +41,22 @@ export default function Main() {
                     All Projects
                 </button>
                 <button
+                    className={currentActive === "react" ? "active" : null}
+                    onClick={() => {
+                        handleClick("react");
+                    }}
+                >
+                    React & MUI
+                </button>
+                <button
+                    className={currentActive === "js" ? "active" : null}
+                    onClick={() => {
+                        handleClick("js");
+                    }}
+                >
+                    JavaScript
+                </button>
+                <button
                     className={currentActive === "css" ? "active" : null}
                     onClick={() => {
                         handleClick("css");
@@ -55,23 +71,7 @@ export default function Main() {
                     }}
                 >
                     Bootstrap
-                </button>
-                <button
-                    className={currentActive === "js" ? "active" : null}
-                    onClick={() => {
-                        handleClick("js");
-                    }}
-                >
-                    JavaScript
-                </button>
-                <button
-                    className={currentActive === "react" ? "active" : null}
-                    onClick={() => {
-                        handleClick("react");
-                    }}
-                >
-                    React & MUI
-                </button>
+                </button>             
             </Box>
 
             <div className="right-section flex">
