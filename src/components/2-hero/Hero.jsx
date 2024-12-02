@@ -72,7 +72,7 @@ export default function Hero() {
                     </div>
                     <div style={{ marginBottom: "30px" }}>
                         <a
-                            href="/cv/السيرة الذاتية شهد خالد باسالم - عربي.pdf"
+                            href="/cv/cv.pdf"
                             download
                         >
                             <button className="main-button">Download CV</button>
