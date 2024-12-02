@@ -1,64 +1,48 @@
 export const myProjects = [
-    // HTML & CSS projects
+    // React projects
     {
-        projectTitle: "Leon Template",
-        projectDescription:
-            "Leon is a simple and responsive template . It comes in a modern, flat design with vibrant colors.",
-        category: "css",
-        imgPath: "/projects/css1.png",
+        projectTitle: "Loan Form App",
+        projectDescription: "Loan Form App is a React-based app where users can fill out a form with their details to apply for a loan.",
+        category: "react",
+        imgPath: "/projects/react1.png",
         githubLink:
-            "https://github.com/shahadbasalim/HTML_And_CSS_Template_One",
-        liveDemoLink:
-            "https://shahadbasalim.github.io/HTML_And_CSS_Template_One/",
+            "https://github.com/shahadbasalim/loan-form-app-using-React",
+        liveDemoLink: "https://loan-form-app-by-shahadbasalim.netlify.app/",
     },
     {
-        projectTitle: "Kasper Template",
-        projectDescription:
-            "Kasper is creative and modern one page template great for portfolio, agency or any other web page.",
-        category: "css",
-        imgPath: "/projects/css2.png",
+        projectTitle: "To Do List App",
+        projectDescription: "To-Do List App is a task management app that allows users to add, edit, delete, and filter tasks based on their status.",
+        category: "react",
+        imgPath: "/projects/react2.png",
         githubLink:
-            "https://github.com/shahadbasalim/HTML_And_CSS_Template_Two",
-        liveDemoLink:
-            "https://shahadbasalim.github.io/HTML_And_CSS_Template_Two/",
+            "https://github.com/shahadbasalim/to-do-list-app-using-React",
+        liveDemoLink: "https://to-do-list-app-by-shahadbasalim.netlify.app/",
     },
     {
-        projectTitle: "Elzero World Template",
-        projectDescription: "A perfect template for personal blogs or showcasing various content in a modern layout.",
-        category: "css",
-        imgPath: "/projects/css3.png",
-        githubLink: "https://github.com/shahadbasalim/HTML_And_CSS_Template_3",
-        liveDemoLink:
-            "https://shahadbasalim.github.io/HTML_And_CSS_Template_3/",
+        projectTitle: "Weather App",
+        projectDescription: "Weather App using React is a weather application that allows users to search for any city and get real-time weather data for that location.",
+        category: "react",
+        imgPath: "/projects/react3.png",
+        githubLink: "https://github.com/shahadbasalim/weather-app-using-React",
+        liveDemoLink: "https://weather-app-by-shahadbasalim.netlify.app/",
     },
     {
-        projectTitle: "Elzero Platform",
-        projectDescription: "A perfect template for building dynamic and interactive social networks or community platforms.",
-        category: "css",
-        imgPath: "/projects/css4.png",
+        projectTitle: "Prayers Timings",
+        projectDescription: "Prayers Timings is an app that displays the prayer times for Muslims in various cities across Saudi Arabia.",
+        category: "react",
+        imgPath: "/projects/react4.png",
         githubLink:
-            "https://github.com/shahadbasalim/HTML_And_CSS_Template_Four",
-        liveDemoLink:
-            "https://shahadbasalim.github.io/HTML_And_CSS_Template_Four/",
+            "https://github.com/shahadbasalim/prayers_timings_using_React",
+        liveDemoLink: "https://prayers-timings-byshahadbasalim.netlify.app/",
     },
-
-    // Bootstrap projects
     {
-        projectTitle: "Bondi Template",
-        projectDescription: "Bondi is a colorful landing page, designed with the help of Bootstrap to ensure a responsive and modern look.",
-        category: "bootstrap",
-        imgPath: "/projects/bootstrap1.png",
+        projectTitle: "Dev Shahad",
+        projectDescription: "A personal website that reflects my skills as a Frontend Developer, where I showcase my tech projects and provide ways to get in touch with me.",
+        category: "react",
+        imgPath: "/projects/react5.png",
         githubLink:
-            "https://github.com/shahadbasalim/Bootstrap_5_Design_01?tab=readme-ov-file",
-        liveDemoLink: "https://shahadbasalim.github.io/Bootstrap_5_Design_01/",
-    },
-    {
-        projectTitle: "Nouvil Template",
-        projectDescription: "Nouvil Template is a simple design created using Bootstrap.",
-        category: "bootstrap",
-        imgPath: "/projects/bootstrap2.png",
-        githubLink: "https://github.com/shahadbasalim/Bootstrap_5_Design_02",
-        liveDemoLink: "https://shahadbasalim.github.io/Bootstrap_5_Design_02/",
+            "https://github.com/shahadbasalim/Portfolio_Using_React",
+        liveDemoLink: "https://dev-shahad.netlify.app ",
     },
 
     // JS projects
@@ -120,49 +104,65 @@ export const myProjects = [
             "https://shahadbasalim.github.io/Create_Template_With_HTML_CSS3_JavaScript/",
     },
 
-    // React projects
+    // HTML & CSS projects
     {
-        projectTitle: "Loan Form App",
-        projectDescription: "Loan Form App is a React-based app where users can fill out a form with their details to apply for a loan.",
-        category: "react",
-        imgPath: "/projects/react1.png",
+        projectTitle: "Leon Template",
+        projectDescription:
+            "Leon is a simple and responsive template . It comes in a modern, flat design with vibrant colors.",
+        category: "css",
+        imgPath: "/projects/css1.png",
         githubLink:
-            "https://github.com/shahadbasalim/loan-form-app-using-React",
-        liveDemoLink: "https://loan-form-app-by-shahadbasalim.netlify.app/",
+            "https://github.com/shahadbasalim/HTML_And_CSS_Template_One",
+        liveDemoLink:
+            "https://shahadbasalim.github.io/HTML_And_CSS_Template_One/",
     },
     {
-        projectTitle: "To Do List App",
-        projectDescription: "To-Do List App is a task management app that allows users to add, edit, delete, and filter tasks based on their status.",
-        category: "react",
-        imgPath: "/projects/react2.png",
+        projectTitle: "Kasper Template",
+        projectDescription:
+            "Kasper is creative and modern one page template great for portfolio, agency or any other web page.",
+        category: "css",
+        imgPath: "/projects/css2.png",
         githubLink:
-            "https://github.com/shahadbasalim/to-do-list-app-using-React",
-        liveDemoLink: "https://to-do-list-app-by-shahadbasalim.netlify.app/",
+            "https://github.com/shahadbasalim/HTML_And_CSS_Template_Two",
+        liveDemoLink:
+            "https://shahadbasalim.github.io/HTML_And_CSS_Template_Two/",
     },
     {
-        projectTitle: "Weather App",
-        projectDescription: "Weather App using React is a weather application that allows users to search for any city and get real-time weather data for that location.",
-        category: "react",
-        imgPath: "/projects/react3.png",
-        githubLink: "https://github.com/shahadbasalim/weather-app-using-React",
-        liveDemoLink: "https://weather-app-by-shahadbasalim.netlify.app/",
+        projectTitle: "Elzero World Template",
+        projectDescription: "A perfect template for personal blogs or showcasing various content in a modern layout.",
+        category: "css",
+        imgPath: "/projects/css3.png",
+        githubLink: "https://github.com/shahadbasalim/HTML_And_CSS_Template_3",
+        liveDemoLink:
+            "https://shahadbasalim.github.io/HTML_And_CSS_Template_3/",
     },
     {
-        projectTitle: "Prayers Timings",
-        projectDescription: "Prayers Timings is an app that displays the prayer times for Muslims in various cities across Saudi Arabia.",
-        category: "react",
-        imgPath: "/projects/react4.png",
+        projectTitle: "Elzero Platform",
+        projectDescription: "A perfect template for building dynamic and interactive social networks or community platforms.",
+        category: "css",
+        imgPath: "/projects/css4.png",
         githubLink:
-            "https://github.com/shahadbasalim/prayers_timings_using_React",
-        liveDemoLink: "https://prayers-timings-byshahadbasalim.netlify.app/",
+            "https://github.com/shahadbasalim/HTML_And_CSS_Template_Four",
+        liveDemoLink:
+            "https://shahadbasalim.github.io/HTML_And_CSS_Template_Four/",
+    },
+
+    // Bootstrap projects
+    {
+        projectTitle: "Bondi Template",
+        projectDescription: "Bondi is a colorful landing page, designed with the help of Bootstrap to ensure a responsive and modern look.",
+        category: "bootstrap",
+        imgPath: "/projects/bootstrap1.png",
+        githubLink:
+            "https://github.com/shahadbasalim/Bootstrap_5_Design_01?tab=readme-ov-file",
+        liveDemoLink: "https://shahadbasalim.github.io/Bootstrap_5_Design_01/",
     },
     {
-        projectTitle: "Dev Shahad",
-        projectDescription: "A personal website that reflects my skills as a Frontend Developer, where I showcase my tech projects and provide ways to get in touch with me.",
-        category: "react",
-        imgPath: "/projects/react5.png",
-        githubLink:
-            "https://github.com/shahadbasalim/Portfolio_Using_React",
-        liveDemoLink: "https://dev-shahad.netlify.app ",
+        projectTitle: "Nouvil Template",
+        projectDescription: "Nouvil Template is a simple design created using Bootstrap.",
+        category: "bootstrap",
+        imgPath: "/projects/bootstrap2.png",
+        githubLink: "https://github.com/shahadbasalim/Bootstrap_5_Design_02",
+        liveDemoLink: "https://shahadbasalim.github.io/Bootstrap_5_Design_02/",
     },
 ];
