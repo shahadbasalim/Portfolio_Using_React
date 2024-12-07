@@ -64,7 +64,7 @@ header .fixed ul.modal {
     border-radius: 1rem;
     padding: 1rem 2rem;
     background-color: var(--secondary);
-    animation: mymove 0.5s 1;
+    animation: mymove 0.5s ;
 }
 @keyframes mymove {
     0% {

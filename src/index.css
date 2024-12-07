@@ -45,9 +45,6 @@ body {
     display: flex;
     align-items: center;
 }
-.border {
-    border: 1px solid red;
-}
 
 li {
     list-style: none;
