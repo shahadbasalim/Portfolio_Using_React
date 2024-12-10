@@ -36,7 +36,7 @@ main .right-section {
     justify-content: start;
 }
 main .right-section .card {
-    border: 1px solid rgba(93, 188, 252, 0.3);
+    border: 1px solid rgba(93, 188, 252, 0.6);
     border-radius: 5px;
     overflow: hidden;
     transition: 0.2s;
@@ -44,6 +44,7 @@ main .right-section .card {
 }
 main .right-section .card:hover {
     border: 1px solid var(--blue);
+    box-shadow: 1px 1px 40px 1px #23232450;
 }
 main .right-section .card img {
     width: 266px;

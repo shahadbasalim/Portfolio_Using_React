@@ -1,7 +1,7 @@
 import "./main.css";
 import LinkIcon from "@mui/icons-material/Link";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+// import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Box from "@mui/material/Box";
 import { myProjects } from "./myProjects";
 import { useState } from "react";
@@ -12,7 +12,7 @@ export default function Main() {
     const [currentActive, setCurrentActive] = useState("all");
 
     // function of category buttons
-    const handleClick = (buttonCategory) => {
+    function handleClick(buttonCategory) {
         setCurrentActive(buttonCategory);
         const newArr = myProjects.filter((item) => {
             return item.category === buttonCategory;
@@ -80,9 +80,7 @@ export default function Main() {
                         return (
                             <motion.article
                                 className="card"
-                                // key={item.imgPath}
                                 key={`${item.imgPath}-${currentActive}`}
-
                                 layout
                                 initial={{ transform: "scale(0.4)" }}
                                 animate={{ transform: "scale(1)" }}
