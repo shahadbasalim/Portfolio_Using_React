@@ -72,7 +72,7 @@ export default function Hero() {
                     </div>
                     <div style={{ marginBottom: "30px" }}>
                         <a
-                            href="/cv/cv.pdf"
+                            href="/cv/CV-Shahad Basalim.pdf"
                             download
                         >
                             <button className="main-button">Download CV</button>
