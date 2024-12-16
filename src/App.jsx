@@ -1,11 +1,12 @@
 import Header from "./components/1-header/Header";
 import Hero from "./components/2-hero/Hero";
 import Main from "./components/3-main/Main";
-import Contact from "./components/4-contact/Contact";
-import Footer from "./components/5-footer/Footer";
+import Skills from "./components/4-skills/Skills";
+import Contact from "./components/5-contact/Contact";
+import Footer from "./components/6-footer/Footer";
 import Container from "@mui/material/Container";
 import Divider from "@mui/material/Divider";
-import ScrollToTop from "./components/6-scroll/ScrollToTopButton";
+import ScrollToTop from "./components/7-scroll/ScrollToTopButton";
 function App() {
     return (
         <>
@@ -20,6 +21,14 @@ function App() {
                     }}
                 />
                 <Main />
+                <Divider
+                    sx={{
+                        borderBottom: "1px solid rgba(63, 63, 70, 0.4)",
+                        py: "3rem",
+                        mb: "1rem",
+                    }}
+                />
+                <Skills />
                 <Divider
                     sx={{
                         borderBottom: "1px solid rgba(63, 63, 70, 0.4)",
