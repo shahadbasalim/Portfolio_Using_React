@@ -6,8 +6,10 @@ import Box from "@mui/material/Box";
 import { myProjects } from "./myProjects";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function Main() {
+    const { t, i18n  } = useTranslation();
     const [arr, setArr] = useState(myProjects);
     const [currentActive, setCurrentActive] = useState("all");
 
@@ -18,7 +20,7 @@ export default function Main() {
             return item.category === buttonCategory;
         });
         setArr(newArr);
-    };
+    }
     return (
         <main id="projects">
             <Box
@@ -30,6 +32,7 @@ export default function Main() {
                     },
                     flexWrap: { xs: "wrap" },
                 }}
+                
             >
                 <button
                     className={currentActive === "all" ? "active" : null}
@@ -38,7 +41,7 @@ export default function Main() {
                         setArr(myProjects);
                     }}
                 >
-                    All Projects
+                    {t("projects.allProjects")}
                 </button>
                 <button
                     className={currentActive === "react" ? "active" : null}
@@ -71,11 +74,11 @@ export default function Main() {
                     }}
                 >
                     Bootstrap
-                </button>             
+                </button>
             </Box>
 
             <div className="right-section flex">
-                <AnimatePresence >
+                <AnimatePresence>
                     {arr.map((item) => {
                         return (
                             <motion.article
@@ -93,17 +96,17 @@ export default function Main() {
                                 <img src={item.imgPath} alt="project" />
                                 <div className="box">
                                     <h2 className="title">
-                                        {item.projectTitle}
+                                    {item.projectTitle[i18n.language]}
                                     </h2>
                                     <p className="sub-title">
-                                        {item.projectDescription}
+                                    {item.projectDescription[i18n.language]}
                                     </p>
                                     <div className="details flex">
                                         <div className="links">
                                             <a href={item.liveDemoLink}>
                                                 <LinkIcon sx={{ mr: 1 }} />
                                             </a>
-                                            <a href={item.githubLink} >
+                                            <a href={item.githubLink}>
                                                 <GitHubIcon />
                                             </a>
                                         </div>

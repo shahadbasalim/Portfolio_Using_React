@@ -8,8 +8,11 @@ import Lottie from "lottie-react";
 import developerAnimation from "../../../public/animation/developer.json";
 
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
+    const { t } = useTranslation();
+
     return (
         <section className="hero flex" id="about">
             <div className="left-section">
@@ -26,28 +29,27 @@ export default function Hero() {
                 </div>
                 <motion.h1
                     className="title"
-                    initial={{ opacity: 0, rotate: -10 }} 
-                    whileInView={{ opacity: 1, rotate: 0 }} 
-                    exit={{ opacity: 0, rotate: -10 }} 
-                    transition={{ duration: 2 }} 
-                    viewport={{ once: false }} 
+                    initial={{ opacity: 0, rotate: -10 }}
+                    whileInView={{ opacity: 1, rotate: 0 }}
+                    exit={{ opacity: 0, rotate: -10 }}
+                    transition={{ duration: 2 }}
                 >
-                    Hello, I'm Shahad Basalim
+                    {t("hero.title")}
                 </motion.h1>
-                <motion.p className="sub-title">
-                    A computer engineer and passionate frontend web developer
-                    with an interest in React. I specialize in creating
-                    interactive and visually appealing user interfaces that
-                    deliver exceptional user experiences. I’m always excited to
-                    bring ideas to life through code and explore new
-                    possibilities in web development.
+                <motion.p
+                    className="sub-title"
+                    initial={{ opacity: 0, x: "-50%" }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: "-50%" }}
+                    transition={{ duration: 1 }}
+                >
+                    {t("hero.subtitle")}
                 </motion.p>
                 <motion.div
                     className="social-media flex"
                     initial={{ opacity: 0, x: "-50%" }} // The text starts from the right
                     whileInView={{ opacity: 1, x: 0 }} // The text appears when it comes into view
                     exit={{ opacity: 0, x: "-50%" }} // The text disappears when it exits the view
-                    viewport={{ once: false, amount: 0.5 }} // The animation repeats when returning to the section
                     transition={{ duration: 1 }}
                 >
                     <div>

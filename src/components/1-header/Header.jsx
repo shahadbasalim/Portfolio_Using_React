@@ -4,7 +4,14 @@ import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
 import BedtimeOutlinedIcon from "@mui/icons-material/BedtimeOutlined";
 import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
+import GTranslateIcon from "@mui/icons-material/GTranslate";
+import { useTranslation } from "react-i18next";
+
 export default function Header() {
+    const { t, i18n } = useTranslation();
+    const [language, setLanguage] = useState(
+        localStorage.getItem("currentLanguage") ?? "en"
+    );
     const [theme, setTheme] = useState(
         localStorage.getItem("currentMode") ?? "dark"
         //if localStorage is null set dark theme
@@ -21,6 +28,20 @@ export default function Header() {
         }
     }, [theme]);
 
+    useEffect(() => {
+        // Set the initial language on load
+        i18n.changeLanguage(language);
+        document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
+    }, [language, i18n]);
+
+    function handleLanguageChange() {
+        const newLanguage = language === "en" ? "ar" : "en";
+        setLanguage(newLanguage);
+        localStorage.setItem("currentLanguage", newLanguage);
+        i18n.changeLanguage(newLanguage); // Change the language
+        document.documentElement.dir = newLanguage === "ar" ? "rtl" : "ltr"; // Update the page direction
+    }
+
     return (
         <header className="flex">
             <button
@@ -36,42 +57,54 @@ export default function Header() {
             <nav>
                 <ul className="flex">
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#about">{t("header.about")}</a>
                     </li>
                     <li>
-                        <a href="#projects">Projects</a>
+                        <a href="#projects">{t("header.projects")}</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="#contact">{t("header.contact")}</a>
                     </li>
                     <li>
-                        <a href="#skills">Skills</a>
+                        <a href="#skills">{t("header.skills")}</a>
                     </li>
                 </ul>
             </nav>
-            <button
-                className="moon-icon flex"
-                onClick={() => {
-                    //localStorage
-                    localStorage.setItem(
-                        "currentMode",
-                        theme === "dark" ? "light" : "dark"
-                    );
-                    setTheme(localStorage.getItem("currentMode"));
-                }}
-            >
-                {theme === "dark" ? (
-                    <BedtimeOutlinedIcon />
-                ) : (
-                    <WbSunnyOutlinedIcon sx={{ color: "orange" }} />
-                )}
-            </button>
-
+            <div className="flex">
+                <button
+                    className="moon-icon flex"
+                    onClick={() => {
+                        //localStorage
+                        localStorage.setItem(
+                            "currentMode",
+                            theme === "dark" ? "light" : "dark"
+                        );
+                        setTheme(localStorage.getItem("currentMode"));
+                    }}
+                >
+                    {theme === "dark" ? (
+                        <BedtimeOutlinedIcon />
+                    ) : (
+                        <WbSunnyOutlinedIcon sx={{ color: "orange" }} />
+                    )}
+                </button>
+                <button
+                    className="language-icon flex"
+                    onClick={handleLanguageChange}
+                    style={{ margin: "0px 5px 0px 5px" }}
+                >
+                    <GTranslateIcon  />
+                </button>
+            </div>
             {/* modal = popup */}
             {showModal && (
                 <div className=" fixed">
                     <ul className="modal">
-                        <li>
+                        <li
+                            className={`close-icon-container ${
+                                language === "ar" ? "rtl" : ""
+                            }`}
+                        >
                             <button
                                 onClick={() => {
                                     setShowModal(false);
@@ -87,7 +120,7 @@ export default function Header() {
                                 href="#about"
                                 onClick={() => setShowModal(false)}
                             >
-                                About
+                                {t("header.about")}
                             </a>
                         </li>
                         <li>
@@ -95,7 +128,7 @@ export default function Header() {
                                 href="#projects"
                                 onClick={() => setShowModal(false)}
                             >
-                                Projects
+                                {t("header.projects")}
                             </a>
                         </li>
                         <li>
@@ -103,15 +136,15 @@ export default function Header() {
                                 href="#contact"
                                 onClick={() => setShowModal(false)}
                             >
-                                Contact
+                                {t("header.contact")}
                             </a>
                         </li>
                         <li>
                             <a
-                                href="#footer"
+                                href="#skills"
                                 onClick={() => setShowModal(false)}
                             >
-                                Footer
+                                {t("header.skills")}
                             </a>
                         </li>
                     </ul>

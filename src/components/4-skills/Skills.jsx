@@ -1,5 +1,6 @@
 import "./skills.css";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const skillsData = [
     { name: "HTML", icon: "/skills/html-icon.png" },
@@ -27,9 +28,11 @@ const skillsData = [
     { name: "i18next", icon: "/skills/i18next-icon.avif" },
 ];
 export default function Skills() {
+    const { t } = useTranslation();
+
     return (
         <section className="skills" id="skills">
-            <h1 className="title">Skills</h1>
+            <h1 className="title">{t("skills.title")}</h1>
             <div className="skills-box flex">
                 <div className="skills-container flex">
                     {skillsData.map((skill) => (
@@ -41,7 +44,6 @@ export default function Skills() {
                             initial={{ opacity: 0, x: "-100%" }} 
                             whileInView={{ opacity: 1, x: 0 }} 
                             exit={{ opacity: 0, x: "-100%" }} 
-                            viewport={{ once: false, amount: 0.5 }}
                             transition={{ duration: 1 }}
                         >
                             <img src={skill.icon} alt={skill.name} />

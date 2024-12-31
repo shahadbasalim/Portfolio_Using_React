@@ -1,0 +1,36 @@
+{
+    "header": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact",
+        "skills": "Skills"
+    },
+    "hero": {
+        "title": "Hello, I'm Shahad Basalim",
+        "subtitle": "A computer engineer and passionate frontend web developer with an interest in React. I specialize in creating interactive and visually appealing user interfaces that deliver exceptional user experiences. I’m always excited to bring ideas to life through code and explore new possibilities in web development."
+    },
+    "projects": {
+        "allProjects": "All Projects"
+    },
+    "skills": {
+        "title": "My Skills"
+    },
+    "contact": {
+        "title": "Contact Me",
+        "subTitle": "I look forward to hearing your thoughts and ideas. You can easily get in touch with me using the form below.",
+        "emailLabel": "Email Address",
+        "messageLabel": "Your Message",
+        "submitButton": {
+            "default": "Submit",
+            "submitting": "Submitting ..."
+        },
+        "successMessage": "Your message has been sent successfully"
+    },
+    "footer": {
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact",
+        "skills": "Skills",
+        "credits": "Made With 💖 By Shahad © 2025"
+    }
+}

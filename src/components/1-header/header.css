@@ -41,7 +41,8 @@ header .fixed {
     backdrop-filter: blur(3px);
 }
 header .menu-icon,
-header .moon-icon {
+header .moon-icon,
+header .language-icon {
     background-color: var(--bgHeader);
     height: 2.4rem;
     width: 2.4rem;
@@ -53,7 +54,8 @@ header .moon-icon {
     transition: 0.2s;
 }
 header .menu-icon:hover,
-header .moon-icon:hover {
+header .moon-icon:hover,
+header .language-icon:hover {
     color: var(--title);
     border: 1px solid orange;
 }
@@ -64,7 +66,7 @@ header .fixed ul.modal {
     border-radius: 1rem;
     padding: 1rem 2rem;
     background-color: var(--secondary);
-    animation: mymove 0.5s ;
+    animation: mymove 0.5s;
 }
 @keyframes mymove {
     0% {
@@ -83,7 +85,6 @@ header .fixed ul.modal li {
     padding: 0.5rem 0 0.77rem;
 }
 header .fixed ul.modal li:first-child {
-    text-align: right;
     border: none;
     padding: 0.2rem 0 0 0;
     margin-bottom: -1rem;
@@ -95,6 +96,13 @@ header .fixed ul.modal li:last-child {
 header .fixed ul.modal li a {
     font-size: 1rem;
 }
+
+.close-icon-container.rtl {
+    text-align: left;
+}
+.close-icon-container {
+    text-align: right;
+}
 .close-icon {
     color: crimson;
     transition: 0.2s;
@@ -102,7 +110,6 @@ header .fixed ul.modal li a {
 .close-icon:hover {
     box-shadow: 1px 1px 5px crimson;
 }
-
 
 /* start media query */
 @media (max-width: 700px) {

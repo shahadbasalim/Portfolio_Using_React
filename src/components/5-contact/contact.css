@@ -4,11 +4,6 @@ h1.title {
     font-size: 2.1rem;
     margin-bottom: 1rem;
 }
-section.contact-us .contact-icon {
-    margin-right: 8px;
-    color: var(--subtitle);
-    font-size: 1.8rem;
-}
 section.contact-us .sub-title {
     color: var(--subtitle);
     margin-bottom: 2rem;
