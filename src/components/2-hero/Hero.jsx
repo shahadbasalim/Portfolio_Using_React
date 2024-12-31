@@ -22,7 +22,7 @@ export default function Hero() {
                         src="/logo2.png"
                         alt="avatar"
                         initial={{ scale: 0 }}
-                        animate={{ scale: 1 }}
+                        whileInView={{ scale: 1 }}
                         transition={{ duration: 1.5 }}
                     />
                     <VerifiedIcon className="verified-icon" />
@@ -82,7 +82,7 @@ export default function Hero() {
                         </a>
                     </div>
                     <div style={{ marginBottom: "30px" }}>
-                        <a href="/cv/CV-Shahad Basalim.pdf" download>
+                        <a href="/cv/CV-Shahad.pdf" download>
                             <button className="main-button">Download CV</button>
                         </a>
                     </div>

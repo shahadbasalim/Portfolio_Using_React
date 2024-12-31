@@ -1,5 +1,6 @@
 section.hero {
     margin-top: 3rem;
+    max-width: 100%;
 }
 section.hero .left-section {
     flex-grow: 1;

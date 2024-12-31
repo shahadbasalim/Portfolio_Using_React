@@ -3,6 +3,7 @@ html {
     box-sizing: border-box;
     letter-spacing: 0.1px;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 *,
 *:before,
@@ -37,7 +38,6 @@ body {
     background-color: var(--primary);
     overflow-x: hidden;
     font-family: "Roboto", sans-serif;
-
 }
 [dir="rtl"] body {
     font-family: 'Tajawal', sans-serif;
